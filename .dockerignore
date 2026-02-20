@@ -1,0 +1,12 @@
+.venv/
+**/__pycache__/
+
+Dockerfile
+compose.yaml
+.dockerignore
+
+**/.gitignore
+
+.env
+
+README.md

@@ -1,0 +1,23 @@
+[project]
+name = "downloader-bot"
+version = "0.1.0"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "aiogram[fast]>=3.25.0",
+    "httpx>=0.28.1",
+    "pillow>=12.1.1",
+    "pydantic-settings>=2.13.0",
+    "yt-dlp[curl-cffi]>=2026.2.4",
+]
+
+[tool.ruff]
+line-length = 100
+lint.select = ["ANN", "B", "A", "ICN", "LOG", "PIE", "SIM", "ARG", "I", "N", "E", "W", "F", "UP", "C4"]
+lint.ignore = ["B008", "ANN201"]
+
+[tool.ruff.lint.isort]
+lines-after-imports = 2
+
+[tool.ruff.format]
+quote-style = "single"
