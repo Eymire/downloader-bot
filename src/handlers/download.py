@@ -62,5 +62,5 @@ async def cmd_download(message: Message, command: CommandObject) -> None:
         ),
     )
 
-    # os.remove(video_file_path)
-    # os.remove(thumbnail_file_path)
+    os.remove(video_file_path)
+    os.remove(thumbnail_file_path)
