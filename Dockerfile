@@ -15,8 +15,8 @@ RUN uv sync --locked
 COPY /src/ ./
 
 COPY entrypoint.sh ./
-RUN chmod +x entrypoint.sh
+RUN chmod +x ./entrypoint.sh
 
-ENTRYPOINT [ "entrypoint.sh" ]
+ENTRYPOINT [ "./entrypoint.sh" ]
 
 CMD [ "uv", "run", "main.py" ]
